@@ -12,9 +12,8 @@ const number = document.getElementById("number");
         }
         button.addEventListener("click", () => {
             if (option.value == "celsius") {
-                number.innerText = celsiusToFahrenheit(input.value);
-                // console.log(input.value);
+                number.innerText = celsiusToFahrenheit(input.value) + "F";
             } else if (option.value == "fahrenheit") {
-                number.innerText = fahrenheitToCelsius(input.value);
+                number.innerText = fahrenheitToCelsius(input.value) + "C";
             }
         })
